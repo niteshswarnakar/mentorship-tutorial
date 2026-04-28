@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #efefef;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: radial-gradient(circle at 2px 2px, #222 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f2d388 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .profile-border {
+            border: 1px solid #d4af37;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="selection:bg-yellow-500 selection:text-black">
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        
+        <div class="border border-zinc-800 p-4 md:p-10 relative overflow-hidden">
+            
+            <nav class="flex justify-between items-center mb-20">
+                <div class="text-3xl font-extrabold tracking-tighter">S<span class="text-yellow-600">.</span></div>
+                <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-semibold text-zinc-500">
+                    <a href="#" class="hover:text-yellow-500 transition">About</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Portfolio</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Experience</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="h-[1px] w-12 bg-zinc-800"></div>
+                    <i class="fa-solid fa-magnifying-glass text-zinc-600 text-sm"></i>
+                </div>
+            </nav>
+
+            <div class="grid md:grid-cols-12 gap-12 items-center mb-32">
+                <div class="md:col-span-7">
+                    <span class="text-yellow-600 font-bold tracking-widest text-xs uppercase">Available for Projects</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold mt-4 mb-6 leading-tight">
+                        I'm <span class="gold-gradient">Saksham</span>
+                    </h1>
+                    <p class="text-zinc-500 text-lg max-w-md leading-relaxed mb-8">
+                        Building high-performance web systems and AI-driven automation. Kathmandu University BIT Student.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="mailto:your@email.com" class="bg-yellow-600 text-black px-8 py-4 font-bold text-xs uppercase tracking-widest hover:bg-yellow-500 transition">
+                            Hire Me
+                        </a>
+                        <div class="flex items-center gap-4 px-6 text-zinc-400">
+                            <i class="fab fa-github hover:text-white cursor-pointer"></i>
+                            <i class="fab fa-linkedin hover:text-white cursor-pointer"></i>
+                            <i class="fab fa-instagram hover:text-white cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div class="profile-border rounded-tl-[80px] rounded-br-[80px]">
+                        <img src="saksham.jpeg" alt="Profile" class="grayscale w-full aspect-[4/5] object-cover rounded-tl-[70px] rounded-br-[70px] brightness-75 hover:brightness-100 transition duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 h-24 w-24 border-l-2 border-b-2 border-yellow-600/30"></div>
+                </div>
+            </div>
+
+            <div class="mb-32">
+                <h2 class="text-xs uppercase tracking-[0.5em] text-zinc-600 font-bold mb-12 text-center">Technical Stack</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="card-glass p-8 rounded-2xl flex flex-col items-center group hover:border-yellow-600/50 transition">
+                        <i class="fab fa-react text-4xl mb-4 group-hover:scale-110 transition"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">React / Vite</span>
+                    </div>
+                    <div class="card-glass p-8 rounded-2xl flex flex-col items-center group hover:border-yellow-600/50 transition">
+                        <i class="fa-solid fa-brain text-4xl mb-4 group-hover:scale-110 transition text-yellow-600"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">AI Automation</span>
+                    </div>
+                    <div class="card-glass p-8 rounded-2xl flex flex-col items-center group hover:border-yellow-600/50 transition">
+                        <i class="fab fa-js text-4xl mb-4 group-hover:scale-110 transition text-yellow-400"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">JavaScript</span>
+                    </div>
+                    <div class="card-glass p-8 rounded-2xl flex flex-col items-center group hover:border-yellow-600/50 transition">
+                        <i class="fa-solid fa-database text-4xl mb-4 group-hover:scale-110 transition text-blue-400"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">Supabase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-32">
+                <div class="flex justify-between items-center mb-12">
+                    <h3 class="text-3xl font-bold">Selected Works</h3>
+                    <div class="h-[1px] flex-grow mx-8 bg-zinc-800"></div>
+                    <span class="text-xs uppercase tracking-widest text-zinc-500">2025—2026</span>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-xl aspect-video bg-zinc-900 mb-4 border border-zinc-800">
+                            <img src="project-1.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-bold text-lg">Hospital Resource System</h4>
+                        <p class="text-zinc-500 text-sm">Real-time bed tracking & resource management.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-xl aspect-video bg-zinc-900 mb-4 border border-zinc-800">
+                            <img src="project-2.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-bold text-lg">AI Assistant "Jarvis"</h4>
+                        <p class="text-zinc-500 text-sm">Voice-controlled automation system built with Python.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-20 border-t border-zinc-800 text-center">
+                <h2 class="text-4xl md:text-6xl font-black mb-10 opacity-20 uppercase">Let's Build Something</h2>
+                <div class="flex flex-col md:flex-row justify-center gap-8 text-zinc-500 text-sm mb-16">
+                    <div class="hover:text-yellow-500 transition cursor-pointer">INSTAGRAM</div>
+                    <div class="hover:text-yellow-500 transition cursor-pointer">LINKEDIN</div>
+                    <div class="hover:text-yellow-500 transition cursor-pointer">GITHUB</div>
+                </div>
+                <p class="text-[10px] tracking-[0.5em] text-zinc-700 font-bold uppercase">"Focus on the process, results will follow"</p>
+            </div>
+
+        </div> </div>
+
+</body>
+</html>
