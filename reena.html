@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rina kri.Yadav - Graphic Designer</title>
+    <meta name="description" content="Professional resume of Rina kri.Yadav, a Graphic Designer specializing in social media and visual communication.">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #001f3f;
+    --sidebar-bg: #e3eaf3;
+    --text-dark: #1a1a1a;
+    --text-muted: #555555;
+    --accent-color: #003366;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f2f5;
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 1000px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Top Header Rectangle Styling */
+.top-header {
+    background-color: #002147; /* Dark Navy from your image */
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.top-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.header-text .job-title {
+    font-size: 1.4rem;
+    letter-spacing: 8px;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+}
+
+.main-body {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 38%;
+    background-color: var(--sidebar-bg);
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-img-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-img-container:hover img {
+    transform: scale(1.1);
+}
+
+.sidebar-section h2 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.contact-info, .skills-list, .languages-list {
+    list-style: none;
+}
+
+.contact-info li, .languages-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 6px;
+    background: #cbd5e0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Main Content Styling */
+.main-content {
+    width: 65%;
+    padding: 50px;
+}
+
+.header-section {
+    margin-bottom: 40px;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.header-section .job-title {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.content-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.experience-item::after, .education-item::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.item-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.item-subtitle {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.resume-container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@media print {
+    body { padding: 0; background: white; }
+    .resume-container { box-shadow: none; border-radius: 0; }
+    .profile-img-container { -webkit-print-color-adjust: exact; }
+}
+
+@media (max-width: 768px) {
+    .resume-container { flex-direction: column; }
+    .sidebar, .main-content { width: 100%; }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Top Header Rectangle -->
+        <header class="top-header">
+            <div class="profile-img-container">
+                <img src="profile.png" alt="Rina kri.Yadav Profile">
+            </div>
+            <div class="header-text">
+                <h1>Rina kri.Yadav</h1>
+                <p class="job-title">GRAPHIC DESIGNER</p>
+            </div>
+        </header>
+
+        <div class="main-body">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h2>Educations</h2>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <span class="item-title">2023 - 2025</span>
+                        </div>
+                        <p class="item-desc">+2, Shikshadeep Higher Secondary School, Biratnagar, Morang</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <span class="item-title">2025 - Running</span>
+                        </div>
+                        <p class="item-desc">Bachelor in Information Technology at Aspire College, Kathmandu University, Morang, Biratnagar</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>My Skills</h2>
+                    <ul class="skills-list">
+                        <li class="item-desc">• Graphic Design (Social Media Posts, Posters, Banners)</li>
+                        <li class="item-desc">• Knowledge of Adobe Photoshop</li>
+                        <li class="item-desc">• Social Media Content Handling</li>
+                        <li class="item-desc">• Creative Thinking</li>
+                        <li class="item-desc">• Good Communication Skills</li>
+                        <li class="item-desc">• Team Coordination</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>Contact Info</h2>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +9779765744350</li>
+                        <li><i class="fas fa-envelope"></i> yaduwanshig47@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Malaya Road, Biratnagar-14, Morang</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <section class="content-section">
+                    <h2>My Profile</h2>
+                    <p class="item-desc">
+                        Creative and detail-oriented Graphic Designer with basic knowledge of design principles and digital content creation. Skilled in social media design and visual communication. Passionate about creating attractive and meaningful designs while continuously learning new tools and trends.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Work Experience</h2>
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <span class="item-title">Social Media Handler</span>
+                            <span class="item-date">2024 - 2025</span>
+                        </div>
+                        <div class="item-subtitle">Sparktech Incorporation, Traffic Chowk, Durga Market</div>
+                        <p class="item-desc"><strong>Currently Working</strong></p>
+                        <ul class="item-desc" style="margin-top: 10px; list-style: inside disc;">
+                            <li>Managing social media accounts and digital content</li>
+                            <li>Handling basic data entry and reports</li>
+                            <li>Coordinating with team members and clients</li>
+                            <li>Improving organizational, communication, and computer skills</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Clients Worked For:</h2>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <ul class="item-desc" style="list-style: inside circle;">
+                            <li>Oasis lounge and bar</li>
+                            <li>Pathivara International Hotel</li>
+                            <li>Klean X Beauty</li>
+                            <li>Annapurna Exim Pvt. Ltd.</li>
+                            <li>Venus Skin & Hair Transplant</li>
+                        </ul>
+                        <ul class="item-desc" style="list-style: inside circle;">
+                            <li>Zenith International College</li>
+                            <li>Skywalk Bhedetar</li>
+                            <li>And many other local businesses</li>
+                        </ul>
+                    </div>
+                    <p class="item-desc" style="margin-top: 15px;">
+                        Created promotional posts, offers, event designs, and branding materials. Improved social media engagement and visual presentation. Designed content according to client requirements and brand identity.
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
